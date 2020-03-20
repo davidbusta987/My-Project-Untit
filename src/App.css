@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+  
+body{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+ }
+
+ 
+/*picture*/
+
+.portrait {
+   height: 75px;
+   background-color: white;
+   width: 75px;
+   border-radius: 100%;
+   margin-left: 500px;
+   margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ /*Dashboard*/
+
+.dashboard{ 
+   display: grid;
+   grid-template-columns: 15% 1fr;
+   height: 100vh;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.sidenav {
+  background-color: #ffffff;
+      
+}
+
+.content{
+  background-color: rgb(235, 245, 252);
+  display: grid;
+}
+
+/*classes*/
+
+.classes {
+   display: grid;
+   height: 40vh;
+    margin-top: 15%;
+   justify-content: center;
+   grid-gap: 10px;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin-left: 10px;
+   margin-right: 10px;
+   
+
+ }
+
+ .card-1 {
+  background-color: white;
+ }
+
+ 
+ .card-2{
+    background-color: white;
+ }
+
+ .card-3{
+    background-color: white;
+ }
+
+
+ /*students-list*/
+
+
+
+
+.student-card {
+   height: 40vh;
+   background-color: white;
+   width: 25%;
+   margin: 10px;
+   text-align: center;
+}
+
+/*student*/
+
+.student-profile {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr; 
+   grid-template-rows:  1fr 1fr ;
+   grid-gap: 10px;
+}
+
+
+.stat-1, .stat-2, .stat-3 {
+      background-color: white;
+      grid-row-start: 2 ;
+      margin-left: 50px;
+
+}
+
+/*sign in*/
+
+.sign-in {
+   display: grid;
+   background-color: #f9f9f9;
+   height: 100vh;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr  ; 
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sign-in-form  {
+     display: grid;
+     border-radius: 3px;
+      background-color: white;
+      grid-template-columns: 1fr  ;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+     grid-row-start: 2;
+     grid-column-start: 2 ;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
